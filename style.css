@@ -1,0 +1,254 @@
+/* Font family */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+/* common styles */
+body{
+    margin: 0px;
+}
+
+header{
+    
+    font-family: 'Poppins', sans-serif;
+}
+.header-part{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: #2D25A0;
+    grid-column-gap: 102px;
+    width: 100%;
+    height: 800px;
+}
+.tournament-title{
+    font-size: 40px;
+    padding-left: 156px;
+    color: #FFFFFF;
+    padding-top: 180px;
+}
+.tournament-title h2{
+    transition: transform 2s ease-in-out, color 2s ease-in-out ;
+}
+.link-decoration{
+    width: 120px;
+    height: 40px;
+     background-color:#E02C6D ;
+     padding-bottom: 30px;
+     border-radius: 10px;
+     padding-left: 20px;
+}
+.link-button{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+ }
+.tournament-title h2:hover{
+    color:#E02C6D;
+    transform: rotateX(360deg);
+}
+.tournament-banner img{
+    width: 556.01px;
+    height:438px ;
+    padding-top: 112px;
+    transition: transform 1.5s ease-in-out ;
+}
+.tournament-banner img:hover{
+    transform: scale(1.2);
+}
+
+.player-details img{
+    width: 300px;
+    height: 256px;
+}
+.players{
+    margin-top: 80px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.players-area{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 40px;
+}
+.card{
+    width: 330px;
+    height: 474px;
+}
+.player{
+    padding: 15px;
+    box-shadow: 1px 2px 15px #dadadd;
+}
+.player-name{
+    color:#18191F ;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+}
+.player-info{
+    font-weight: 400px;
+    font-size: 16px;
+    color:#6C6C6C ;
+    text-align: justify;
+}
+.highlights{
+    margin-top: 200px;
+}
+.highlights-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 80px;
+}
+.highlight{
+    width: 469px;
+    height: 309px;
+    padding-left: 125px;
+}
+.highlights-title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    color:#0A0826 ;
+}
+.highlights-details{
+    font-size: 16px;
+    font-weight: 400;
+    color: dimgray;
+    text-align: justify;
+}
+.watch-link{
+    text-decoration: none;
+    background-color:#E02C6D ;
+    width: 178px;
+    height: 60px;
+    padding: 15px;
+    color: white;
+    font-size: 700;
+}
+.match-photo img{
+    width: 567px;
+    height: 427px;
+}
+.footer-area{
+    margin-top: 200px;
+}
+.alignment{
+    text-align: center;
+}
+.logo img{
+    width: 483px;
+    height: 110px;
+}
+.contact-icon{
+    font-size: 20px;
+}
+.fa-facebook{
+    padding-right: 14px;
+    color:#395A9A;
+}
+.fa-whatsapp{
+    padding-right: 14px;
+    color: #25D366;
+}
+.fa-youtube{
+    padding-right: 14px;
+    color: #FF0000;
+}
+.fa-twitter{
+    color: #1DA1F2;
+}
+.copyright{
+    color: dimgrey;
+   font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* ------ Media Quaries apply--------- */
+
+
+/* For Mobile phones */
+
+
+@media only screen and (max-width:688px) {
+    .header-part,.players-area,.highlights-section{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .header-part{
+        width: 340px;
+        height: 1200px;
+    }
+    
+    .tournament-title{
+        font-size: 36px;
+        padding-left: 10px;
+        width: 278px;
+        height: 138px;
+    }
+    .tournament-banner img{
+        width: 329px;
+        height: 280px;
+        padding-top: 250px;
+    
+    }
+    .players{
+        padding-left: 15px;
+    }
+    .highlights-title{
+        font-size: 30px;
+      padding-right: 500px;
+    }
+    .match-photo img{
+        width: 328px;
+        height: 248px;
+        padding-top: 350px;
+        padding-left: 15px;
+    }
+     .highlights-details{
+         padding-right: 300px;
+     }
+    
+    .logo img{
+        width: 271px;
+        height: 71px;
+    }
+
+}
+
+/* For Tablet Devices */
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .header-part, .players-area{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .tournament-title{
+        font-size: 36px;
+        padding-left: 10px;
+        width: 278px;
+        height: 138px;
+    }
+    .tournament-banner img{
+        width: 350px;
+        height: 320px;
+        padding-top: 250px;
+    }
+    .players{
+        padding-left: 30px;
+       
+    }
+    .highlights-section{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+    
+    .highlights-title{
+        font-size: 30px;
+    }
+    .match-photo img{
+        padding-top: 50px;
+        width: 380px;
+        height: 250px;
+        padding-left: 120px;
+    }
+   
+}
+ 
+/* The End */
